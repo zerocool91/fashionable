@@ -1,0 +1,39 @@
+.contact-form
+	padding: 100px 0
+	.grid-container
+		max-width: 998px
+	.wpcf7 form
+		input[type=text], textarea, input[type="email"]
+			font-size: 14px
+			height: 26px
+			background-color: rgba(#fff, 0.5)
+			color: #fff
+			border: 1px solid #eeeeee
+		textarea
+			height: 110px
+		.submit-button
+			float: right
+			margin-right: 25px
+			outline: none
+			border: none
+			padding: 0 30px 0 20px
+			height: 34px
+			background-color: $colorSecondary
+			color: #fff
+			font-size: 14px
+			font-weight: 400
+			position: relative
+			cursor: pointer
+			&::after
+				content: ''
+				width: 0
+				height: 0
+				position: absolute
+				right: -42px
+				top: 0
+				border: 17px solid transparent
+				border-left: 25px solid $colorSecondary
+			&:hover
+				background-color: lighten($colorSecondary, 20)
+				&::after
+					border-left-color: lighten($colorSecondary, 20)

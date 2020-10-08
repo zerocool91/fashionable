@@ -1,0 +1,91 @@
+header
+  position: relative
+  .slide_item
+    height: 100vh
+    background-size: cover
+    background-position: center
+    max-height: 784px
+  .slick-initialized .slick-slide
+    display: flex
+    align-items: flex-end
+  .header-title
+    max-width: 750px
+    margin: 0 auto
+    text-align: center
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.75)
+    color: #ffffff
+    font-family: $fontLato
+    font-size: 30px
+    font-weight: 400
+    line-height: 34px
+    text-transform: uppercase
+    margin-bottom: 144px
+  .header-image
+    position: absolute
+    left: 50%
+    top: 88px
+    transform: translateX(-50%)
+    z-index: 9
+  .slider-nav
+    position: absolute
+    top: 20px
+    right: 20px
+    z-index: 1
+    width: 45px
+    display: flex
+    justify-content: space-between
+    .slick-arrow
+      color: #fff
+      font-size: 40px
+      cursor: pointer
+      font-weight: 400
+  .header-nav
+    background-color: #000
+    color: #fff
+    padding: 25px 0 27px
+    position: relative
+    .grid-container
+      max-width: 1497px
+  .header-logo
+    max-width: 202px
+    max-height: 62px
+  .header-menu
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    justify-content: space-between
+    min-width: 413px
+    a
+      color: inherit
+      font-family: $fontRaleway
+      font-size: 16px
+      text-transform: uppercase
+      position: relative
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 30px
+        width: 0%
+        height: 4px
+        background-color: $colorSecondary
+      &:hover
+        color: $colorSecondary
+        &::after
+          width: 100%
+
+.slicknav
+  &_menu
+    display: none
+    background-color: #000
+    .slicknav_btn
+      background-color: #000
+    .slicknav_icon-bar
+      width: 30px
+      height: 3px
+  &_nav
+    text-align: right
+    a
+      padding: 5px 0
